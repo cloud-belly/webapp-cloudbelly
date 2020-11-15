@@ -1,0 +1,47 @@
+$input-focus-color: #fff;
+#layout-wrapper {
+  overflow-x: hidden;
+}
+#layout-header {
+  font-size: 0.7em !important;
+  svg {
+    font-size: large;
+  }
+  .p-b-10 {
+    padding-bottom: 2em;
+    input[type="text"] {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .search-icon {
+      color: #aaa;
+      position: absolute;
+      top: 2px;
+      right: 18px;
+    }
+  }
+  input {
+    height: 1.5em;
+  }
+  .live-icon {
+    color: rgb(196, 29, 173);
+  }
+  .photo-icon {
+    color: rgb(44, 160, 15);
+  }
+  #post-bar {
+    padding: 1.5em;
+
+    input {
+      border-radius: 2em;
+    }
+    svg {
+      position: absolute;
+      top: 1.3em;
+      right: 1.5em;
+      color: #aaa;
+      cursor: pointer;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 
 const PrivateRoute = (props) => {
   const { component: Component, ...rest } = props;
+  // TODO: need to check authentication here
   return <Route {...rest} render={(props) => <Component {...props} />} />;
 };
 
