@@ -5,7 +5,7 @@ import { BiCart, BiCalendar } from "react-icons/bi";
 import { BsCameraVideo } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
 import { RiCameraLensLine } from "react-icons/ri";
-import "./Layout.scss";
+import "./layout.scss";
 
 const Layout = (props) => {
   const {
