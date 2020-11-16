@@ -1,7 +1,7 @@
 import React from "react";
-import { FaGrin, FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import { AiOutlineSetting } from "react-icons/ai";
-import { BiCart, BiCalendar } from "react-icons/bi";
+import { BiCart, BiCalendar, BiLaugh } from "react-icons/bi";
 import { BsCameraVideo } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
 import { RiCameraLensLine } from "react-icons/ri";
@@ -34,17 +34,17 @@ const Layout = (props) => {
             onChange={changePost}
             value={postValue}
           />
-          <FaGrin />
+          <BiLaugh />
         </div>
         <div className="row p-b-10">
           <div className="col-sm-2 col-2 text-center">
             <AiOutlineSetting onClick={handleClickSetting} />
           </div>
           <div className="col-sm-4 col-4" onClick={handleClickLive}>
-            <BsCameraVideo className="live-icon" /> LIVE VIDEO
+            <BsCameraVideo className="live-icon" /> <span className="action-title">LIVE VIDEO</span>
           </div>
           <div className="col-sm-4 col-4" onClick={handleClickPhoto}>
-            <RiCameraLensLine className="photo-icon" /> PHOTO VIDEO
+            <RiCameraLensLine className="photo-icon" /> <span className="action-title">PHOTO VIDEO</span>
           </div>
           <div className="col-sm-2 col-2">
             <BiCart onClick={handleClickCart} />
