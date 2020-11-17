@@ -1,10 +1,10 @@
 import React from "react";
-import StatusInputView from "../components/StatusInputView";
+import StatusInput from "../components/StatusInput/StatusInput";
 
 function Dashboard() {
   return (
     <div className="mt-5 w-75 mx-auto">
-      <StatusInputView />
+      <StatusInput />
     </div>
   );
 }

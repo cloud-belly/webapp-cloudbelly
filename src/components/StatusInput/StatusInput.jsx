@@ -1,6 +1,7 @@
 import React from "react";
+import "./StatusInput.scss";
 
-const StatusInputView = () => {
+const StatusInput = () => {
   const [ expand, setExpand ] = React.useState(false);
 
   return (
@@ -21,4 +22,4 @@ const StatusInputView = () => {
   );
 };
 
-export default StatusInputView;
+export default StatusInput;
