@@ -1,0 +1,56 @@
+$input-focus-color: #fff;
+#layout-wrapper {
+  overflow-x: hidden;
+}
+#layout-header {
+  background-image: linear-gradient(#eee, #fff);
+  font-size: 0.7em !important;
+  svg {
+    font-size: large;
+    box-shadow: 0 8px 6px -6px #a0a0a0;
+  }
+  .action-title {
+    display: inline-block;
+    box-shadow: 0 8px 6px -6px #a0a0a0;
+  }
+  .p-b-10 {
+    padding-bottom: 2em;
+    input[type="text"] {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .search-icon {
+      color: #999;
+      position: absolute;
+      top: 2px;
+      right: 18px;
+    }
+  }
+  input {
+    height: 1.5em;
+    box-shadow: 0 8px 6px -6px #a0a0a0 !important;
+  }
+  .live-icon {
+    color: rgb(196, 29, 173);
+  }
+  .photo-icon {
+    color: rgb(44, 160, 15);
+  }
+  #post-bar {
+    padding: 1.5em;
+
+    input {
+      border-radius: 2em;
+      font-size: 1.5em;
+    }
+    svg {
+      position: absolute;
+      top: 1.1em;
+      right: 1.5em;
+      color: #aaa;
+      cursor: pointer;
+      box-shadow: none;
+    }
+  }
+}
