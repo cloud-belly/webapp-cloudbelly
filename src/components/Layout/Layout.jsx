@@ -5,6 +5,8 @@ import { BiCart, BiCalendar, BiLaugh } from "react-icons/bi";
 import { BsCameraVideo } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
 import { RiCameraLensLine } from "react-icons/ri";
+import { StatusInput } from "../StatusInput";
+import { HashSearchBar } from "../HashSearchBar";
 import "./layout.scss";
 
 const Layout = (props) => {
@@ -27,14 +29,7 @@ const Layout = (props) => {
     <div id="layout-wrapper">
       <div id="layout-header">
         <div id="post-bar">
-          <input
-            className="form-control form-control-lg"
-            type="text"
-            placeholder="What's on your mind"
-            onChange={changePost}
-            value={postValue}
-          />
-          <BiLaugh />
+          <StatusInput />
         </div>
         <div className="row p-b-10">
           <div className="col-sm-2 col-2 text-center">
@@ -55,14 +50,7 @@ const Layout = (props) => {
             <BiCalendar onClick={handleClickBook} />
           </div>
           <div className="col-sm-8 col-8">
-            <input
-              className="form-control shadow-none"
-              type="text"
-              placeholder="Search"
-              value={searchValue}
-              onChange={changeSearch}
-            />
-            <FaSearch className="search-icon" />
+            <HashSearchBar handleSubmit={handleSearch} />
           </div>
           <div className="col-sm-2 col-2">
             <GrMapLocation onClick={handleClickMap} />

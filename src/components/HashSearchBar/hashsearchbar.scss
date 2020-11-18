@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28rem;
-  margin: 2rem auto;
-  margin-top: 3.5rem;
+  width: 100%;
+  // margin: 2rem auto;
+  // margin-top: 3.5rem;
   input {
     height: 3.4rem;
     margin-right: 0.8rem;
@@ -24,9 +24,12 @@
     }
   }
   &-append {
-    i {
+    position: absolute;
+    right: 1.2rem;
+    z-index: 2;
+    svg {
       font-size: 1.7rem;
-      color: gray;
+      color: #aaa;
     }
     &:hover {
       cursor: pointer;

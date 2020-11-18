@@ -1,7 +1,6 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 
-import HashSearchBar from "../components/hashSearchBar/hash-searchbar";
 function Dashboard() {
   return (
     <Layout>

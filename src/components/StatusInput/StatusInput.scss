@@ -1,19 +1,19 @@
 .status {
   width: 100%;
-  height: 15rem;
+  // height: 15rem;
 
   &-inputbox {
     position: relative;
-    
+
     &-input {
       width: 100%;
       height: 6rem;
       border-radius: 27px;
-      padding: .8rem 1.2rem;
+      padding: 0.8rem 1.2rem;
       font-size: 16px;
 
       background: var(--bg-color);
-      box-shadow: -10px -10px 30px rgba(220, 220, 220, .5);
+      box-shadow: -10px -10px 30px rgba(220, 220, 220, 0.5);
 
       border-color: transparent;
 
@@ -30,13 +30,13 @@
       cursor: pointer;
     }
   }
-  
+
   &-container {
     width: 100%;
     background: var(--bg-color);
     border-radius: 27px;
     font-size: 16px;
-    padding: .5rem 1.2rem;
-    box-shadow: -10px -10px 30px rgba(200, 200, 200, .5);
+    padding: 0.5rem 1.2rem;
+    box-shadow: -10px -10px 30px rgba(200, 200, 200, 0.5);
   }
 }
