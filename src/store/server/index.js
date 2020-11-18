@@ -35,7 +35,7 @@ axiosInstance.interceptors.response.use(
   }
 );
 
-async function getRecord(url) {
+export async function getRecord(url) {
   return await axiosInstance.get(url);
 }
 
