@@ -1,7 +1,7 @@
 import { produce } from "immer";
 import _ from "lodash";
 
-import { ERROR_SEARCH, SUBMIT_SEARCH, CHANGE_SEARH, NEW_SEARCH_DATA } from "../action-types";
+import { ERROR_SEARCH, CHANGE_SEARH, NEW_SEARCH_DATA } from "../action-types";
 
 const initialState = {
   data: {},
@@ -25,6 +25,14 @@ export default function SearchStateReducer(state = initialState, action) {
         draftState.request = {
           isLoading: false,
           error: null
+        };
+      });
+    }
+    case ERROR_SEARCH: {
+      return produce(state, (draftState) => {
+        draftState.request = {
+          isLoading: false,
+          error: action.error
         };
       });
     }
