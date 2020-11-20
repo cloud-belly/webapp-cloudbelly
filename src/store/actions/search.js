@@ -4,3 +4,7 @@ export const changeSearch = (evt) => ({
   type: CHANGE_SEARH,
   payload: { value: evt.target.value }
 });
+
+export const submitSearch = () => ({
+  type: SUBMIT_SEARCH
+});

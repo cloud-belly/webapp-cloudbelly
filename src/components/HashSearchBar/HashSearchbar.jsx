@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { connect } from "react-redux";
-import { changeSearch } from "../../store/actions/search";
+import { changeSearch, submitSearch } from "../../store/actions/search";
 import "./hashsearchbar.scss";
 
 function HashSearchBar(props) {
@@ -23,7 +23,6 @@ function HashSearchBar(props) {
 }
 
 const mapStateToProps = (state) => {
-  console.log("here is the state", state);
   return {
     inputVal: state.search.inputValue
   };
@@ -33,6 +32,10 @@ const mapDispatchToProps = (dispatch) => {
   return {
     changeSearch: (evt) => {
       dispatch(changeSearch(evt));
+    },
+    handleSubmit: (evt) => {
+      evt.preventDefault();
+      dispatch(submitSearch());
     }
   };
 };
