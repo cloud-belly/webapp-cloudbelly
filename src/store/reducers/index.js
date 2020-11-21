@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import UserStateReducer from "./user";
+import user from "./user";
+import search from "./search";
 
 const reducers = combineReducers({
-  UserStateReducer
+  user,
+  search
 });
 
 export default reducers;

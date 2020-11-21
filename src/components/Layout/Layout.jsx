@@ -50,7 +50,7 @@ const Layout = (props) => {
             <BiCalendar onClick={handleClickBook} />
           </div>
           <div className="col-sm-8 col-8">
-            <HashSearchBar handleSubmit={handleSearch} />
+            <HashSearchBar />
           </div>
           <div className="col-sm-2 col-2">
             <GrMapLocation onClick={handleClickMap} />

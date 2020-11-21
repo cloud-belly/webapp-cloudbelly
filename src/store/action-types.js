@@ -1,0 +1,4 @@
+export const CHANGE_SEARH = "CHANGE_SEARH";
+export const SUBMIT_SEARCH = "SUBMIT_SEARCH";
+export const ERROR_SEARCH = "ERROR_SEARCH";
+export const NEW_SEARCH_DATA = "NEW_SEARCH_DATA";

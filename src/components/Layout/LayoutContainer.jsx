@@ -51,7 +51,6 @@ const LayoutContainer = (props) => {
       handleClickBook={handleClickBook}
       handleClickMap={handleClickMap}
       handlePost={handlePost}
-      handleSearch={handleSearch}
       searchValue={searchValue}
       changeSearch={changeSearch}
       postValue={postValue}
