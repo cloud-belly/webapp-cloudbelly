@@ -4,7 +4,7 @@ import _ from "lodash";
 import { ERROR_SEARCH, CHANGE_SEARH, NEW_SEARCH_DATA } from "../action-types";
 
 const initialState = {
-  data: {},
+  data: [],
   inputValue: "",
   request: {
     isLoading: false,
