@@ -10,7 +10,20 @@ import {
 } from "../action-types";
 
 const initialState = {
-  data: [],
+  data: [
+    {
+      seller: {
+        name: "KFC",
+        logo: "http://logo.kfc"
+      },
+      picture: "http://meal.img",
+      name: "Big burger",
+      price: 250,
+      discount: "GET 10% CASHBACK UPTO Rs 50",
+      likesNumber: 528,
+      commentsNumber: 498
+    }
+  ],
   request: {
     isLoading: false,
     isLoadingMore: false,
@@ -19,7 +32,7 @@ const initialState = {
   }
 };
 
-export default function SearchStateReducer(state = initialState, action) {
+export default function DashboardStateReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_USER_DASHBOARD: {
       return produce(state, (draftState) => {
