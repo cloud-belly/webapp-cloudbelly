@@ -4,7 +4,7 @@ import { Settings } from "../screens/Settings";
 import { Switch, Route } from "react-router-dom";
 import Login from "../screens/authentications/login";
 import PropTypes from "prop-types";
-
+import Cart from "../screens/cart/cart";
 const PrivateRoute = (props) => {
   const { component: Component, ...rest } = props;
   // TODO: need to check authentication here
@@ -13,6 +13,10 @@ const PrivateRoute = (props) => {
 
 const Navigation = (props) => {
   let routes = [
+    {
+      path: "/cart",
+      component: Cart
+    },
     {
       path: "/dashboard",
       component: Dashboard
