@@ -12,6 +12,11 @@ const initialState = {
   }
 };
 
+// return {
+//...state,
+//  inputValue: action.value
+//}consumer, producer
+
 export default function SearchStateReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_SEARH: {
