@@ -14,12 +14,12 @@ const initialState = {
     {
       seller: {
         name: "KFC",
-        logo: "http://logo.kfc"
+        logo: "https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo.png"
       },
-      picture: "http://meal.img",
+      picture: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/meal-prep-index-1566932947.png",
       name: "Big burger",
       price: 250,
-      discount: "GET 10% CASHBACK UPTO Rs 50",
+      description: "Salad for those who want to lose weight",
       likesNumber: 528,
       commentsNumber: 498
     }

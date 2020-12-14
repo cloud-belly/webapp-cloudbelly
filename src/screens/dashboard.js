@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Spinner } from "react-bootstrap";
 import { connect } from "react-redux";
 import { Layout } from "../components/Layout";
+import { SellerItemCart } from "../components/SellerItemCart";
 import { loadData, loadMoreData } from "../store/actions/dashboard";
 
 function Dashboard({ data, loading, loadingMore, load, loadMore }) {
@@ -17,7 +18,7 @@ function Dashboard({ data, loading, loadingMore, load, loadMore }) {
         <div id="dashboard-container">
           {loadingMore && <div>spin</div>}
           {data.map((item, i) => (
-            <div key={`db-${i}`}>Add item data here</div>
+            <SellerItemCart key={`db-${i}`} item={item} />
           ))}
         </div>
       )}

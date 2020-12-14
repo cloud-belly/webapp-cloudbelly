@@ -1,29 +1,35 @@
 import React from "react";
 import { BiCart } from "react-icons/bi";
-import { FaHeart } from "react-icons/fa";
-import { FcComments } from "react-icons/fc";
+import { FaHeart, FaCommentAlt } from "react-icons/fa";
 import { connect } from "react-redux";
 import "./style.scss";
 
 const SellerItemCart = (props) => {
-  const { sellerInfo, handleAddToCart, likeNumber, commentNumber, handleToggleLike, handleComment } = props;
-
+  const { item, handleAddToCart, handleToggleLike, handleComment } = props;
+  console.log("item >>>> ", item);
   return (
-    <div>
+    <div className="card">
       <div className="card-head">
-        <img src="" alt="SellerIcon" />
-        <BiCart onClick={handleAddToCart} />
+        <img src={item.seller.logo} alt="Logo" />
+        <div className="info-wrapper">
+          <strong>{item.seller.name}</strong>
+          <br />
+          <span>{item.description}</span>
+        </div>
+        <span className="cart-button">
+          <BiCart onClick={handleAddToCart} />
+        </span>
       </div>
       <div className="card-body">
-        <img className="meal-image" src="" alt="Meal" />
+        <img className="meal-image" src={item.picture} alt="Meal" />
         <div className="activity-info">
           <span className="like-container">
             <FaHeart onClick={handleToggleLike} />
-            <span>{likeNumber}</span>
+            <span>{item.likesNumber}</span>
           </span>
           <span className="comment-icon-container">
-            <FcComments onClick={handleComment} />
-            <span>{commentNumber}</span>
+            <FaCommentAlt onClick={handleComment} />
+            <span>{item.commentsNumber}</span>
           </span>
         </div>
       </div>
