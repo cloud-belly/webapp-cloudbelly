@@ -7,7 +7,7 @@ import dashboard from "./dashboard";
 const reducers = combineReducers({
   user,
   search,
-  cart
+  cart,
   dashboard
 });
 
