@@ -21,7 +21,21 @@ const initialState = {
       price: 250,
       description: "Salad for those who want to lose weight",
       likesNumber: 528,
-      commentsNumber: 498
+      commentsNumber: 498,
+      similarItems: [
+        {
+          name: "Burger no jutsu",
+          price: "235"
+        },
+        {
+          name: "Cheese burger with chicken",
+          price: "275"
+        },
+        {
+          name: "Cheese burger simple",
+          price: "225"
+        }
+      ]
     }
   ],
   request: {

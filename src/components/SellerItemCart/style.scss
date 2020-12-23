@@ -63,4 +63,15 @@
       }
     }
   }
+  .similar-items {
+    padding: 0px 20px 10px 20px;
+    .item-similar {
+      color: #000;
+      font-size: 1em;
+      &:nth-of-type(1) {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
