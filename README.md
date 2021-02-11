@@ -73,4 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## icons
 
-The icons used in the project is react icons (https://www.npmjs.com/package/react-icons)
+The icons used in the project is react icons (https://react-icons.github.io/react-icons/)
