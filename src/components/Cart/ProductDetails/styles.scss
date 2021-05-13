@@ -1,0 +1,30 @@
+.container {
+  padding: 5px;
+  .action {
+    cursor: pointer;
+  }
+  .product-image {
+    width: 80vw;
+    margin-left: 5vw;
+  }
+  .item-ratings {
+    .stars {
+      .ko {
+        color: #faf1ae;
+      }
+      .ok {
+        color: #d3bd15;
+      }
+    }
+  }
+  .item-calories-indicator {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+  }
+  .item-number {
+    .number {
+      margin: 10px;
+    }
+  }
+}

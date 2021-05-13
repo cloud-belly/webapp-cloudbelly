@@ -1,12 +1,17 @@
 import React from "react";
-import "./CartProductItem.scss";
+import "./styles.scss";
 import { connect } from "react-redux";
 import { BiUpArrow } from "react-icons/bi";
 import { BiDownArrow } from "react-icons/bi";
 import { MdDeleteForever } from "react-icons/md";
 
 import { IncrementItem, DecrementItem, DropItem } from "../../../store/actions/cart";
-export function CartProductItem({ product, handleItemSize, handleDeleteItem }) {
+import { useHistory } from "react-router-dom";
+export function ProductItem({ product, handleItemSize, handleDeleteItem }) {
+  const history = useHistory();
+  const handleViewDetails = () => {
+    history.push(`cart/item/${product.id}`);
+  };
   return (
     <div className="cartProduct">
       <div className="cartProduct__leftView">
@@ -25,7 +30,7 @@ export function CartProductItem({ product, handleItemSize, handleDeleteItem }) {
           </span>
         </div>
       </div>
-      <div className="cartProduct__rightView">
+      <div className="cartProduct__rightView" onClick={handleViewDetails}>
         <img src="https://images-na.ssl-images-amazon.com/images/I/816fOeamMBL._AC_SX522_.jpg" alt="imag" />
       </div>
     </div>
@@ -47,4 +52,4 @@ const mapDispatchProps = (dispatch) => {
   };
 };
 
-export default connect(null, mapDispatchProps)(CartProductItem);
+export default connect(null, mapDispatchProps)(ProductItem);

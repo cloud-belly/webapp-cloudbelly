@@ -12,7 +12,8 @@ const initialState = {
       image: "",
       number: 1,
       price: 10,
-      description: "lorem Ipsum ufia nuih iuhfu hfsiu"
+      description: "lorem Ipsum ufia nuih iuhfu hfsiu",
+      url: "https://images-na.ssl-images-amazon.com/images/I/816fOeamMBL._AC_SX522_.jpg"
     },
     {
       id: 1,
@@ -21,7 +22,8 @@ const initialState = {
       image: "",
       number: 1,
       price: 15,
-      description: "lorem Ipsum ufia nuih iuhfu hfsiu"
+      description: "lorem Ipsum ufia nuih iuhfu hfsiu",
+      url: "https://images-na.ssl-images-amazon.com/images/I/816fOeamMBL._AC_SX522_.jpg"
     },
     {
       id: 2,
@@ -30,16 +32,18 @@ const initialState = {
       image: "",
       number: 1,
       price: 20,
-      description: "lorem Ipsum ufia nuih iuhfu hfsiu"
+      description: "lorem Ipsum ufia nuih iuhfu hfsiu",
+      url: "https://images-na.ssl-images-amazon.com/images/I/816fOeamMBL._AC_SX522_.jpg"
     },
     {
       id: 3,
       name: "Pastry",
-      rating: 4,
+      rating: 5,
       image: "",
       number: 1,
       price: 25,
-      description: "lorem Ipsum ufia nuih iuhfu hfsiu"
+      description: "lorem Ipsum ufia nuih iuhfu hfsiu",
+      url: "https://images-na.ssl-images-amazon.com/images/I/816fOeamMBL._AC_SX522_.jpg"
     }
   ]
 };
