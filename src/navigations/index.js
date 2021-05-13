@@ -14,6 +14,10 @@ const PrivateRoute = (props) => {
 const Navigation = (props) => {
   let routes = [
     {
+      path: "/",
+      component: Dashboard
+    },
+    {
       path: "/cart",
       component: Cart
     },

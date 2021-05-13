@@ -1,0 +1,77 @@
+.card {
+  padding-top: 10px;
+  &-head {
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    z-index: 0;
+    img {
+      height: 36px;
+      box-shadow: 14px 17px 14px -9px #a0a0a0 !important;
+    }
+    strong,
+    span {
+      box-shadow: 5px 10px 4px -6px #a0a0a0 !important;
+    }
+    .cart-button {
+      svg {
+        font-size: 36px;
+        cursor: pointer;
+        color: #fff;
+      }
+      &::before {
+        content: "";
+        background: radial-gradient(#a0a0a0, white);
+        position: absolute;
+        width: 44px;
+        height: 46px;
+        z-index: -1;
+        border-radius: 50%;
+      }
+    }
+    .info-wrapper {
+      span {
+        font-size: smaller !important;
+      }
+    }
+  }
+  &-body {
+    .meal-image {
+      height: 200px;
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 15px 18px 6px -6px #a0a0a0;
+    }
+    .activity-info {
+      font-size: 16px;
+      margin-top: 2px;
+      svg {
+        font-size: 23px;
+        margin-right: 2px;
+      }
+      .like-container {
+        cursor: pointer;
+        margin-right: 10px;
+        svg {
+          color: #ff586e;
+        }
+      }
+      .comment-icon-container {
+        cursor: pointer;
+        svg {
+          color: #00d8f0;
+        }
+      }
+    }
+  }
+  .similar-items {
+    padding: 0px 20px 10px 20px;
+    .item-similar {
+      color: #000;
+      font-size: 1em;
+      &:nth-of-type(1) {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
